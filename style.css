@@ -256,7 +256,7 @@ section {
   margin-top: 2rem;
 }
 
-.abour-details-container {
+.about-details-container {
   justify-content: center;
   flex-direction: column;
 }
@@ -295,6 +295,10 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.text-container p {
+  padding: 1rem 0;
 }
 
 /* EXPERIENCE SECTION */
