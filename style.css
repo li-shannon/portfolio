@@ -160,8 +160,8 @@ a {
 /* SECTION */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 12vh;
+  height: 88vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -175,16 +175,23 @@ section {
 
 #profile {
   display: flex;
-  justify-content: content;
+  justify-content: center;
   gap: 5rem;
   height: 80vh;
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 275px;
+  width: 275px;
   margin: auto 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__pic-container img {
+  width: 100%;
+  height: auto;
 }
 
 .section__text {
@@ -265,7 +272,7 @@ section {
 
 .about-containers {
   gap: 2rem;
-  margin-bottom: 2 rem;
+  margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
@@ -301,13 +308,6 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
 }
 
 .text-container p {
