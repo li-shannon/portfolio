@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   padding-top: 10vh;
@@ -304,23 +309,28 @@ section {
 }
 
 .about-containers {
+  display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
 .about-details-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  align-items: start;
   justify-content: center;
-  flex-direction: column;
 }
 
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
+.education-container,
+.text-container,
+.timeline-container {
+  flex: none;
+  max-width: 100%;
 }
 
 .details-container {
@@ -337,9 +347,87 @@ section {
   gap: 4rem;
 }
 
-.text-container p {
-  padding: 1rem 0;
+.education-container {
+  grid-row: 1;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
 }
+
+.text-container p {
+  grid-row: 2;
+}
+
+.timeline-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  max-height: 400px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+}
+
+.timeline-title {
+  position: sticky;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.timeline::-webkit-scrollbar {
+  display: none;
+}
+
+ul.timeline {
+  position: relative;
+  overflow-y: auto;
+  padding-left: 5px;
+}
+
+ul.timeline li {
+  border-left: 2px solid rgb(163, 163, 163);
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+ul.timeline li:last-child {
+  padding-bottom: 0;
+  border-left: 2px solid transparent;
+}
+
+ul.timeline li::before {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: rgb(163, 163, 163);
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -31px;
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  text-align: left;
+  color: rgb(85, 85, 85);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-content {
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.timeline-content p {
+  font-size: 0.7rem;
+  color: rgb(85, 85, 85);
+}
+
 
 /* SKILLS SECTION */
 

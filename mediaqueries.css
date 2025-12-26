@@ -23,8 +23,15 @@
     display: block;
   }
 
-  .arrow {
-    display: none;
+  .about-details-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .details-container,
+  .text-container,
+  .timeline-container {
+    max-width: 100%;
   }
 
   section,
