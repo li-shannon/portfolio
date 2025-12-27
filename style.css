@@ -57,7 +57,8 @@ a {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .logo:hover {
@@ -174,6 +175,12 @@ section {
 
 .section-container {
   display: flex;
+  margin-top: 2rem;
+  gap: 4rem;
+}
+
+#skills .section-container {
+  display: block;
 }
 
 /* PROFILE SECTION */
@@ -183,6 +190,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 82vh;
+  padding-top: 5vh;
   margin-bottom: 5rem;
 }
 
@@ -343,10 +351,6 @@ section {
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-}
-
 .education-container {
   grid-row: 1;
   padding: 1.5rem;
@@ -357,9 +361,12 @@ section {
   text-align: center;
 }
 
+#about .text-container {
+  grid-row: 2;
+}
+
 .text-container p {
   font-size: 0.9rem;
-  grid-row: 2;
 }
 
 .timeline-container {
